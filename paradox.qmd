@@ -1,0 +1,45 @@
+# Preface {.unnumbered}
+
+Why I wrote this book ...
+
+## The engines of data science and the paradox of open
+
+The [Computer History Museum](https://computerhistory.org/timelines/) recounts that the history of the [Information Age](https://en.wikipedia.org/wiki/Information_Age) is driven by three 'engines', namely the silicon engine, the storage engine and the internet as the networking engine. Each of these engines have been instrumental in the development in of data science as we know today. Without the silicon engine, we would not be able to train foundational large language models with over 10^23^ FLOPs.[^1] Without the storage engine and the internet, we would not be able to store and collect petabyte-sized datasets such as [Common Crawl](https://commoncrawl.org/) as input for these models.
+
+Besides the technological developments in and of themselves, the internet also gave birth to the open movement.[^2] Numerous organisations and initiatives have been launched with a belief in openness and free knowledge. Their proponents placed their bets on the combined power of networked information services and new governance models for the production and sharing of content and data. Members of this broad movement believed it possible to leverage this combination of power and opportunity to build a more democratic society, unleashing the power of the internet to create universal access to knowledge and culture. Such openness meant not only freedom, but also presented a path to justice and equality.
+
+::: {.callout-note icon=false}
+
+## We learned that open approaches flourish under two types of conditions:
+
+1. __Projects where many people contribute to the creation of a common resource__ – this is the story of Wikipedia, OpenStreetMap, Blender.org, and the countless free software projects that provide much of the internet’s infrastructure.
+
+2. __Circumstances where opening up is the result of external incentives or requirements, rather than voluntary actions__ – this is the story of publicly-funded knowledge production like Open Access academic publications, cultural heritage collections in the Public Domain, Open Educational Resources (OER), and Open Government data.
+
+:::
+
+However, the open revolution not happen. At least not on the scale that we and many other proponents of free culture expected. Although the copyright wars are almost over, conflicts about access to and control over informational resources have been superseded by conflicts about privacy, economic value extraction, the emergence of artificial intelligence, and the destabilising effects of dominant platforms on (democratic) societies. Instead of access to information, the control of personal data has emerged in the age of platforms as the critical contention.
+
+Today, open is both a challenge to and an enabler of concentrations of power. Over the last decade, we have witnessed a wholesale transformation of the networked information ecosystem. The web moved away from the ideals and the open design of the early internet and turned into an environment that is dominated by a small number of platforms.
+
+## From closed digtal platforms towards open, federated data platforms
+
+[@dereuver2018digital], [@dereuver2022openness]
+
+|   | __Type of data sharing__ | __Technology enablers to create openness of health data platforms__ |
+|:-:|:-------|:-------------|
+| __1__ | Data at the most granular subject level, which is persisted and used to provide a longitudinal record. | Decentralized catalogs, semantic interoperability |
+| __2__ | Aggregated data, for example statistics for policy evaluation and benchmarking | __Federated learning__ |
+| __3__ | Data analytics modules, that provide access to work and access the data. | __Federated learning (FL)__ [@rieke2020future] and __privacy- enhancing technologies (PETs)__ [@scheibner2021revolutionizing;@jordan2022selecting]: new paradigms that address the problem of data governance and privacy by training algorithms collaboratively without exchanging the data itself. Models can be trained on combined datasets and made available as open source artifacts for decision support. Data analysts can use FL and PETs to work with the data in a collaborative, decentralized fashion. |
+| __4__ | Trained models that have been derived from the data and can be used stand-alone for decision support. | ONNX, HugginFace ... |
+
+: Types of data sharing and in relation to new standards and technology enablers to create openness. Taken from de Reuver et al. (2022). {#tbl-types-data-sharing}
+
+
+
+## Image credit
+
+In the spirit of the [animal menagerie](https://www-oreilly-com.dianus.libr.tue.nl/animals.csp) of O'Reilly books, I have chosen the _Fortuna Fragilis_ as the preliminary cover. This species can be found on [Terra Ultima](https://terra-ultima.tumblr.com/) by [Raoul Deleo](https://raouldeleo.com/). I like to think that federated data science is fragile and fortuitous at the same time, and that it is worth kindling if we are to put data to use for the common good.
+<!-- 
+[^1]: Floating point operations, see [this graph on Our World in Data](https://ourworldindata.org/grapher/artificial-intelligence-training-computation).
+[^2]: Paul Keller and Alek Tarkowski, [The Paraodox of Open](https://paradox.openfuture.eu/). -->

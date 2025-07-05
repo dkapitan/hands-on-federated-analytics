@@ -1,0 +1,3 @@
+# Secure aggregation server
+
+Explanation of a secure aggregation server.

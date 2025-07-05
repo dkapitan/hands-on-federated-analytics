@@ -1,0 +1,92 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hands-On Federated Analytics",
+    "section": "",
+    "text": "Welcome\nWhy I wrote this book …\nlink to some section",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#image-credit",
+    "href": "index.html#image-credit",
+    "title": "Hands-On Federated Analytics",
+    "section": "Image credit",
+    "text": "Image credit\nIn the spirit of the animal menagerie of O’Reilly books, I have chosen the Fortuna Fragilis as the preliminary cover. This species can be found on Terra Ultima by Raoul Deleo. I like to think that collaborative data science is fragile and fortuitous at the same time, and that it is worth kindling if we are to put data to use for the common good.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "1.1 some section\nThis is a book created from markdown and executable code.\nSeeknuth84? for additional discussion of literate programming.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "paradox.html",
+    "href": "paradox.html",
+    "title": "2  The Paradox of Open",
+    "section": "",
+    "text": "2.1 The engines of data science and the paradox of open\nThe Computer History Museum recounts that the history of the Information Age is driven by three ‘engines’, namely the silicon engine, the storage engine and the internet as the networking engine. Each of these engines have been instrumental in the development in of data science as we know today. Without the silicon engine, we would not be able to train foundational large language models with over 1023 FLOPs.[^1] Without the storage engine and the internet, we would not be able to store and collect petabyte-sized datasets such as Common Crawl as input for these models.\nBesides the technological developments in and of themselves, the internet also gave birth to the open movement.[^2] Numerous organisations and initiatives have been launched with a belief in openness and free knowledge. Their proponents placed their bets on the combined power of networked information services and new governance models for the production and sharing of content and data. Members of this broad movement believed it possible to leverage this combination of power and opportunity to build a more democratic society, unleashing the power of the internet to create universal access to knowledge and culture. Such openness meant not only freedom, but also presented a path to justice and equality.\nHowever, the open revolution not happen. At least not on the scale that we and many other proponents of free culture expected. Although the copyright wars are almost over, conflicts about access to and control over informational resources have been superseded by conflicts about privacy, economic value extraction, the emergence of artificial intelligence, and the destabilising effects of dominant platforms on (democratic) societies. Instead of access to information, the control of personal data has emerged in the age of platforms as the critical contention.\nToday, open is both a challenge to and an enabler of concentrations of power. Over the last decade, we have witnessed a wholesale transformation of the networked information ecosystem. The web moved away from the ideals and the open design of the early internet and turned into an environment that is dominated by a small number of platforms.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Paradox of Open</span>"
+    ]
+  },
+  {
+    "objectID": "paradox.html#the-engines-of-data-science-and-the-paradox-of-open",
+    "href": "paradox.html#the-engines-of-data-science-and-the-paradox-of-open",
+    "title": "2  The Paradox of Open",
+    "section": "",
+    "text": "We learned that open approaches flourish under two types of conditions:\n\n\n\n\nProjects where many people contribute to the creation of a common resource – this is the story of Wikipedia, OpenStreetMap, Blender.org, and the countless free software projects that provide much of the internet’s infrastructure.\nCircumstances where opening up is the result of external incentives or requirements, rather than voluntary actions – this is the story of publicly-funded knowledge production like Open Access academic publications, cultural heritage collections in the Public Domain, Open Educational Resources (OER), and Open Government data.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Paradox of Open</span>"
+    ]
+  },
+  {
+    "objectID": "paradox.html#from-closed-digtal-platforms-towards-open-federated-data-platforms",
+    "href": "paradox.html#from-closed-digtal-platforms-towards-open-federated-data-platforms",
+    "title": "2  The Paradox of Open",
+    "section": "2.2 From closed digtal platforms towards open, federated data platforms",
+    "text": "2.2 From closed digtal platforms towards open, federated data platforms\n1,2\n\n\n\nTable 2.1: Types of data sharing and in relation to new standards and technology enablers to create openness. Taken from de Reuver et al. (2022).\n\n\n\n\n\n\n\n\n\n\n\nType of data sharing\nTechnology enablers to create openness of health data platforms\n\n\n\n\n1\nData at the most granular subject level, which is persisted and used to provide a longitudinal record.\nDecentralized catalogs, semantic interoperability\n\n\n2\nAggregated data, for example statistics for policy evaluation and benchmarking\nFederated learning\n\n\n3\nData analytics modules, that provide access to work and access the data.\nFederated learning (FL)3 and privacy- enhancing technologies (PETs)4,5: new paradigms that address the problem of data governance and privacy by training algorithms collaboratively without exchanging the data itself. Models can be trained on combined datasets and made available as open source artifacts for decision support. Data analysts can use FL and PETs to work with the data in a collaborative, decentralized fashion.\n\n\n4\nTrained models that have been derived from the data and can be used stand-alone for decision support.\nONNX, HugginFace …",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Paradox of Open</span>"
+    ]
+  },
+  {
+    "objectID": "paradox.html#image-credit",
+    "href": "paradox.html#image-credit",
+    "title": "2  The Paradox of Open",
+    "section": "2.3 Image credit",
+    "text": "2.3 Image credit\nIn the spirit of the animal menagerie of O’Reilly books, I have chosen the Fortuna Fragilis as the preliminary cover. This species can be found on Terra Ultima by Raoul Deleo. I like to think that federated data science is fragile and fortuitous at the same time, and that it is worth kindling if we are to put data to use for the common good. \n\n\n\n\n1. de Reuver, M. et al. (2018). The Digital Platform: A Research Agenda. Journal of Information Technology 33, 124–135. 10.1057/s41265-016-0033-3.\n\n\n2. de Reuver, M. et al. (2022). The openness of data platforms: A research agenda. In Proceedings of the 1st International Workshop on Data Economy DE ’22. (Association for Computing Machinery), pp. 34–41. 10.1145/3565011.3569056.\n\n\n3. Rieke, N. et al. (2020). The future of digital health with federated learning. npj Digital Medicine 3, 1–7. 10.1038/s41746-020-00323-1.\n\n\n4. Scheibner, J. et al. (2021). Revolutionizing Medical Data Sharing Using Advanced Privacy-Enhancing Technologies: Technical, Legal, and Ethical Synthesis. Journal of Medical Internet Research 23, e25120. 10.2196/25120.\n\n\n5. Jordan, S. et al. (2022). Selecting Privacy-Enhancing Technologies for Managing Health Data Use. Frontiers in Public Health 10, 814163. 10.3389/fpubh.2022.814163.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Paradox of Open</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "3  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "1. de\nReuver, M. et al. (2018). The Digital Platform: A\nResearch Agenda. Journal of Information Technology 33,\n124–135. 10.1057/s41265-016-0033-3.\n\n\n2. de\nReuver, M. et al. (2022). The openness of data platforms: A research\nagenda. In Proceedings of the 1st International Workshop on\nData Economy DE ’22. (Association for\nComputing Machinery), pp. 34–41. 10.1145/3565011.3569056.\n\n\n3. Jordan, S. et al. (2022). Selecting\nPrivacy-Enhancing Technologies for Managing Health\nData Use. Frontiers in Public Health 10, 814163. 10.3389/fpubh.2022.814163.\n\n\n4. Rieke, N. et al. (2020). The future of digital\nhealth with federated learning. npj Digital Medicine 3, 1–7. 10.1038/s41746-020-00323-1.\n\n\n5. Scheibner, J. et al. (2021). Revolutionizing\nMedical Data Sharing Using Advanced Privacy-Enhancing\nTechnologies: Technical, Legal, and\nEthical Synthesis. Journal of Medical Internet Research\n23, e25120. 10.2196/25120.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]
