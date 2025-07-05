@@ -1,0 +1,30 @@
+project:
+  type: book
+
+book:
+  title: "Hands-On Federated Analytics"
+  author: "Norah Jones"
+  date: "7/6/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - paradox.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: hands-on-federated-analytics.bib
+csl: cell-modified.csl
+
+format:
+  html:
+    citations-hover: true
+    footnotes-hover: true
+    crossrefs-hover: true
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+
+
