@@ -1,5 +1,7 @@
 # Welcome {.unnumbered}
 
+It is a truth universally acknowledged, that a data scientist in possession of a good skills, must be in want of more data.
+
 ::: {.column-margin}
 ![](cover.png)
 :::
