@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -38,10 +57,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5fd9db47a040b21ac2cac9a0b3b722ba.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-fd014ada8877419199ac73958e9333e8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -147,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#some-section" id="toc-some-section" class="nav-link active" data-scroll-target="#some-section"><span class="header-section-number">1.1</span> some section</a></li>
+  <li><a href="#key-resources" id="toc-key-resources" class="nav-link active" data-scroll-target="#key-resources"><span class="header-section-number">1.1</span> Key resources</a></li>
   </ul>
 </nav>
     </div>
@@ -173,12 +192,52 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a book created from markdown and executable code.</p>
-<p>See<span class="citation" data-cites="knuth84"><sup><a href="references.html#ref-knuth84" role="doc-biblioref"><strong>knuth84?</strong></a></sup></span> for additional discussion of literate programming.</p>
-<section id="some-section" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="some-section"><span class="header-section-number">1.1</span> some section</h2>
+<p>A survey on federated analytics (FA) defines it as “a paradigm for collaboratively extracting insights from distributed data that is owned by multiple parties (e.g., individual mobile devices or institutional organizations) under the coordination of a central entity (e.g., a service provider) without any of the raw data leaving their local parties or revealing information beyond the targeted insights. The core principles of this paradigm allow breaking the limitations for deriving analytics from limited centralized data, in terms of privacy concerns and operational costs.”<span class="citation" data-cites="elkordy2023federated"><sup><a href="references.html#ref-elkordy2023federated" role="doc-biblioref">1</a></sup></span></p>
+<p>Discerning characteristics:</p>
+<ul>
+<li>Apply some form of statistical disclore control (SDC) and/or privacy-enhancing technologies (PETS). Note we SDC can include differential privacy (DP), but we take a more generic approach that we want to protect the raw data as such, for example to provide guarantees to data holders with respect to commercial interest, trade secrets and the like. data privacy/security through PETs. Practically, all approaches to FA should have output control</li>
+<li>governance on the computation and not on data access as such</li>
+</ul>
+<p><img src="./images/federated-analytics-overview.png" class="img-fluid"></p>
+<section id="key-resources" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="key-resources"><span class="header-section-number">1.1</span> Key resources</h2>
+<p>Monographs, very detailed:</p>
+<ul>
+<li>Federated Learning Systems (2021) by Rehman and Gaber<span class="citation" data-cites="rehman2021federated"><sup><a href="references.html#ref-rehman2021federated" role="doc-biblioref">2</a></sup></span></li>
+<li>Federated Learning (2022) by Ludwig and Baracaldo<span class="citation" data-cites="ludwig2022federated"><sup><a href="references.html#ref-ludwig2022federated" role="doc-biblioref">3</a></sup></span></li>
+</ul>
+<p>Review papers</p>
+<ul>
+<li>Elkordy, A.R. et al.&nbsp;(2023)<span class="citation" data-cites="elkordy2023federated"><sup><a href="references.html#ref-elkordy2023federated" role="doc-biblioref">1</a></sup></span></li>
+<li>Wang, Z. et al.&nbsp;(2025 )<span class="citation" data-cites="wang2025survey"><sup><a href="references.html#ref-wang2025survey" role="doc-biblioref">4</a></sup></span></li>
+</ul>
+<p>Applications in healthcare</p>
+<ul>
+<li>Rieke, N. et al.&nbsp;(2020)<span class="citation" data-cites="rieke2020future"><sup><a href="references.html#ref-rieke2020future" role="doc-biblioref">5</a></sup></span></li>
+<li>Joshi, M. et al.&nbsp;(2022)<span class="citation" data-cites="joshi2022federated"><sup><a href="references.html#ref-joshi2022federated" role="doc-biblioref">6</a></sup></span>, Fig 2 is nice diagram explaining horizontal, vertical partitioning and transfer learning</li>
+</ul>
 
 
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-elkordy2023federated" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Elkordy, A.R. et al. (2023). Federated <span>Analytics</span>: <span>A Survey</span>. SIP <em>12</em>. <a href="https://doi.org/10.1561/116.00000063">10.1561/116.00000063</a>.</div>
+</div>
+<div id="ref-rehman2021federated" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Rehman, M.H.U., and Gaber, M.M. eds. (2021). Federated <span>Learning Systems</span>: <span>Towards Next-Generation AI</span> (Springer International Publishing) <a href="https://doi.org/10.1007/978-3-030-70604-3">10.1007/978-3-030-70604-3</a>.</div>
+</div>
+<div id="ref-ludwig2022federated" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Ludwig, H., and Baracaldo, N. eds. (2022). Federated <span>Learning</span>: <span>A Comprehensive Overview</span> of <span>Methods</span> and <span>Applications</span> (Springer International Publishing) <a href="https://doi.org/10.1007/978-3-030-96896-0">10.1007/978-3-030-96896-0</a>.</div>
+</div>
+<div id="ref-wang2025survey" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Wang, Z. et al. (2025). A <span>Survey</span> on <span>Federated Analytics</span>: <span>Taxonomy</span>, <span>Enabling Techniques</span>, <span>Applications</span> and <span>Open Issues</span>. IEEE Commun. Surv. Tutorials, 1–1. <a href="https://doi.org/10.1109/COMST.2025.3558755">10.1109/COMST.2025.3558755</a>.</div>
+</div>
+<div id="ref-rieke2020future" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Rieke, N. et al. (2020). The future of digital health with federated learning. npj Digit. Med. <em>3</em>, 1–7. <a href="https://doi.org/10.1038/s41746-020-00323-1">10.1038/s41746-020-00323-1</a>.</div>
+</div>
+<div id="ref-joshi2022federated" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Joshi, M. et al. (2022). Federated <span>Learning</span> for <span>Healthcare Domain</span> - <span>Pipeline</span>, <span>Applications</span> and <span>Challenges</span>. ACM Trans. Comput. Healthcare <em>3</em>, 40:1–40:36. <a href="https://doi.org/10.1145/3533708">10.1145/3533708</a>.</div>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
