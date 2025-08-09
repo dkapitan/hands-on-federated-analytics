@@ -28,8 +28,10 @@ format:
     toc: true
     number-sections: true
     colorlinks: true
-    mainfont: Inter
-    sansfont: "Zilla Slab"
+    
+    # gives error on GitHub Actions: fonts not available on system
+    # mainfont: Inter
+    # sansfont: "Zilla Slab"
 
 
 
