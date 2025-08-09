@@ -1,0 +1,8 @@
+typography:
+  fonts:
+    - family: Inter
+      source: google
+    - family: Zilla Slab
+      source: google
+  base: Inter
+  headings: Zilla Slab

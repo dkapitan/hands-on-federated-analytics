@@ -1,7 +1,28 @@
 # Introduction
 
-This is a book created from markdown and executable code.
+A survey on federated analytics (FA) defines it as "a paradigm for collaboratively extracting insights from distributed data that is owned by multiple parties (e.g., individual mobile devices or institutional organizations) under the coordination of a central entity (e.g., a service provider) without any of the raw data leaving their local parties or revealing information beyond the targeted insights. The core principles of this paradigm allow breaking the limitations for deriving analytics from limited centralized data, in terms of privacy concerns and operational costs." [@elkordy2023federated]
 
-See @knuth84 for additional discussion of literate programming.
+Discerning characteristics:
 
-## some section
+- Apply some form of statistical disclore control (SDC) and/or privacy-enhancing technologies (PETS). Note we SDC can include differential privacy (DP), but we take a more generic approach that we want to protect the raw data as such, for example to provide guarantees to data holders with respect to commercial interest, trade secrets and the like. data privacy/security through PETs. Practically, all approaches to FA should have output control 
+- governance on the computation and not on data access as such
+
+![](./images/federated-analytics-overview.png)
+
+
+## Key resources
+
+Monographs, very detailed:
+
+- Federated Learning Systems (2021) by Rehman and Gaber [@rehman2021federated]
+- Federated Learning (2022) by Ludwig and Baracaldo [@ludwig2022federated]
+
+Review papers
+
+- Elkordy, A.R. et al. (2023) @elkordy2023federated
+- Wang, Z. et al. (2025 )@wang2025survey
+
+Applications in healthcare
+
+- Rieke, N. et al. (2020) @rieke2020future
+- Joshi, M. et al. (2022) @joshi2022federated, Fig 2 is nice diagram explaining horizontal, vertical partitioning and transfer learning

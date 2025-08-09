@@ -21,8 +21,8 @@ format:
     footnotes-hover: true
     crossrefs-hover: true
     theme:
-      - cosmo
       - brand
+      - cosmo
   pdf:
     documentclass: scrreprt
 
