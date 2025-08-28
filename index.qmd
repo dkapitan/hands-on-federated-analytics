@@ -1,14 +1,31 @@
 # Welcome {.unnumbered}
 
-It is a truth universally acknowledged, that a data scientist in possession of a good skills, must be in want of more data.
+_It is a truth universally acknowledged, that a data scientist in possession of good skills, must be in want of more data._
 
 ::: {.column-margin}
 ![](cover.png)
 :::
 
-Why I wrote this book ...
+Why I wrote this book:
 
-[link to some section](intro.qmd#some-section)
+- Federated analytics large potential but notoriously hard and often misunderstood. 'Federation' can mean many things.
+- Motivated to support data science for the common good, I believe that federated analytics has a role to play in implementing data cooperatives, enable more wide-scale data sharing to support transformative change in healthcare, education, agriculture etc.
+- Interesting from teaching modern data science: it touches on many separate topics that are interesting but hard to see in context. Cryptography, cloud engineering, standardization, predicate pushdown...
+- Aim to enlarge the frame of thinking of those interested in the field. Side note denkraam with comic Maarten Toonder.
+
+Scope: federated analytics at large. Having better understating of how federated queries work is also a huge step forward towards data commons.
+
+
+Structure:
+
+- stand-alone chapters that can be read on their own.
+- chapter 1 to 4 explain basic principles and concepts of federated learning
+- chapter 5 to 8 are specific usecases/applications
+- chapter 9 and 10 are more technical and aimed at engineers and system administrators how to implement and maintain FA
+- chapter 11 and 12 address ongoing and future developments
+- accompanying code respository to run various examples and use-case
+    - using vantage6 as the main platform
+
 
 ## Image credit
 

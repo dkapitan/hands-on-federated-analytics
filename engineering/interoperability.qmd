@@ -1,0 +1,7 @@
+---
+title: Semantic interoperability
+subtitle: Beyond mappings and syntacting interoperability
+---
+
+- Work 'ontologies of ontologies'
+- 

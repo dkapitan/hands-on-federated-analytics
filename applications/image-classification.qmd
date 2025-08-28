@@ -1,0 +1,6 @@
+---
+title: Image classification
+subtitle: Training image classifiers with federated learning
+---
+
+Work and show-case Dekker et al.

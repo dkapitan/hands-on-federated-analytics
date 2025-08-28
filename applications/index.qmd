@@ -1,0 +1,4 @@
+---
+title: Applications
+subtitle: Applications of federated analytics
+---

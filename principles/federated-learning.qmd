@@ -1,0 +1,4 @@
+---
+title: Federated learning
+subtitle: From peer-to-peer to client-server federated learning approaches
+---

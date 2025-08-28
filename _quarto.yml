@@ -3,13 +3,31 @@ project:
 
 book:
   title: "Hands-On Federated Analytics"
+  subtitle: "A practical guide to secure collaborative data science"
   author: "Daniel Kapitan"
   date: "7/6/2025"
   chapters:
     - index.qmd
-    - intro.qmd
-    - paradox.qmd
-    - summary.qmd
+    - part: principles/index.qmd
+      chapters:
+      - principles/why.qmd
+      - principles/federated-analytics.qmd
+      - principles/federated-learning.qmd
+      - principles/mpc.qmd
+    - part: applications/index.qmd
+      chapters:
+      - applications/image-classification.qmd
+      - applications/text-classification.qmd
+      - applications/graph-based-analytics.qmd
+      - applications/private-set-intersection.qmd
+    - part: engineering/index.qmd
+      chapters: 
+      - engineering/composable-data-stack.qmd
+      - engineering/interoperability.qmd
+    - part: future/index.qmd
+      chapters:
+      - future/paradox.qmd
+      - future/data-spaces.qmd
     - references.qmd
 
 bibliography: hands-on-federated-analytics.bib

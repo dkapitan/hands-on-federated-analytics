@@ -1,0 +1,8 @@
+---
+title: Composable data stack
+subtitle: The composable data stack as the foundation for federated analytics systems
+author:
+    - Daniel Kapitan
+    - Yannick Vinkesteijn
+    - someone from DuckDB?!
+---

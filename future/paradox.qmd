@@ -1,5 +1,6 @@
 ---
-title: The Paradox of Open
+title: The paradox of open
+subtitle: Towards open, federated data platform
 ---
 
 ## The engines of data science and the paradox of open

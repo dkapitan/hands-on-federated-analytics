@@ -1,0 +1,11 @@
+---
+title: Text classiciation
+subtitle: Federated supervised learning with text
+---
+
+Work DHD AOIC
+
+- F-NLP covers supervised learning with text
+    - classification using text, often in combination with tabular data. NLP/Language models tools are used as pre-processing step for embedding
+    - not in scope: training/tuning of LLMs (separate chapter?)
+- PLUGIN-ML library

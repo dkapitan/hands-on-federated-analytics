@@ -1,0 +1,17 @@
+---
+title: Graph-based analytics
+subtitle: Federated graph-queries
+author:
+    - Daniel Kapitan
+    - Joep van Dun
+    - Linkisght/Zorginstituut?/Maarten den Braber
+---
+
+## Omics domain
+
+- FAIR Data Cube
+- Hartwig
+
+## Business analytics
+
+- KIK-V

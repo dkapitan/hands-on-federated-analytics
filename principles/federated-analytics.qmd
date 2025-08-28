@@ -1,4 +1,9 @@
-# Introduction
+---
+title: Federated analytics
+subtitle: Where we explain the basic concepts and principles of federated analytics
+---
+
+## Introduction
 
 A survey on federated analytics (FA) defines it as "a paradigm for collaboratively extracting insights from distributed data that is owned by multiple parties (e.g., individual mobile devices or institutional organizations) under the coordination of a central entity (e.g., a service provider) without any of the raw data leaving their local parties or revealing information beyond the targeted insights. The core principles of this paradigm allow breaking the limitations for deriving analytics from limited centralized data, in terms of privacy concerns and operational costs." [@elkordy2023federated]
 
@@ -26,3 +31,6 @@ Applications in healthcare
 
 - Rieke, N. et al. (2020) @rieke2020future
 - Joshi, M. et al. (2022) @joshi2022federated, Fig 2 is nice diagram explaining horizontal, vertical partitioning and transfer learning
+
+Hands-on
+- vantage6 workshop ([link](https://workshop.vantage6.ai/aio.html))

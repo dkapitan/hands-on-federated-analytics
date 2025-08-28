@@ -1,0 +1,7 @@
+---
+title: Principles
+subtitle: Where we lay out the principles and main concepts of federated analytics
+---
+
+- We introduce the taxonomy.
+- We give toy examples to illustrate
