@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Hands-On Federated Analytics",
     "section": "",
-    "text": "Welcome\nIt is a truth universally acknowledged, that a data scientist in possession of a good skills, must be in want of more data.\nWhy I wrote this book …\nlink to some section",
+    "text": "Welcome\nIt is a truth universally acknowledged, that a data scientist in possession of good skills, must be in want of more data.\nWhy I wrote this book:\nScope: federated analytics at large. Having better understating of how federated queries work is also a huge step forward towards data commons.\nStructure:",
     "crumbs": [
       "Welcome"
     ]
@@ -20,73 +20,167 @@
     ]
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
+    "objectID": "principles/index.html",
+    "href": "principles/index.html",
+    "title": "Principles",
     "section": "",
-    "text": "1.1 Key resources\nA survey on federated analytics (FA) defines it as “a paradigm for collaboratively extracting insights from distributed data that is owned by multiple parties (e.g., individual mobile devices or institutional organizations) under the coordination of a central entity (e.g., a service provider) without any of the raw data leaving their local parties or revealing information beyond the targeted insights. The core principles of this paradigm allow breaking the limitations for deriving analytics from limited centralized data, in terms of privacy concerns and operational costs.”1\nDiscerning characteristics:\nMonographs, very detailed:\nReview papers\nApplications in healthcare",
+    "text": "We introduce the taxonomy.\nWe give toy examples to illustrate",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "Principles"
     ]
   },
   {
-    "objectID": "intro.html#key-resources",
-    "href": "intro.html#key-resources",
-    "title": "1  Introduction",
+    "objectID": "principles/federated-analytics.html",
+    "href": "principles/federated-analytics.html",
+    "title": "2  Federated analytics",
     "section": "",
-    "text": "Federated Learning Systems (2021) by Rehman and Gaber2\nFederated Learning (2022) by Ludwig and Baracaldo3\n\n\n\nElkordy, A.R. et al. (2023)1\nWang, Z. et al. (2025 )4\n\n\n\nRieke, N. et al. (2020)5\nJoshi, M. et al. (2022)6, Fig 2 is nice diagram explaining horizontal, vertical partitioning and transfer learning\n\n\n\n\n\n1. Elkordy, A.R. et al. (2023). Federated Analytics: A Survey. SIP 12. 10.1561/116.00000063.\n\n\n2. Rehman, M.H.U., and Gaber, M.M. eds. (2021). Federated Learning Systems: Towards Next-Generation AI (Springer International Publishing) 10.1007/978-3-030-70604-3.\n\n\n3. Ludwig, H., and Baracaldo, N. eds. (2022). Federated Learning: A Comprehensive Overview of Methods and Applications (Springer International Publishing) 10.1007/978-3-030-96896-0.\n\n\n4. Wang, Z. et al. (2025). A Survey on Federated Analytics: Taxonomy, Enabling Techniques, Applications and Open Issues. IEEE Commun. Surv. Tutorials, 1–1. 10.1109/COMST.2025.3558755.\n\n\n5. Rieke, N. et al. (2020). The future of digital health with federated learning. npj Digit. Med. 3, 1–7. 10.1038/s41746-020-00323-1.\n\n\n6. Joshi, M. et al. (2022). Federated Learning for Healthcare Domain - Pipeline, Applications and Challenges. ACM Trans. Comput. Healthcare 3, 40:1–40:36. 10.1145/3533708.",
+    "text": "2.1 Introduction\nA survey on federated analytics (FA) defines it as “a paradigm for collaboratively extracting insights from distributed data that is owned by multiple parties (e.g., individual mobile devices or institutional organizations) under the coordination of a central entity (e.g., a service provider) without any of the raw data leaving their local parties or revealing information beyond the targeted insights. The core principles of this paradigm allow breaking the limitations for deriving analytics from limited centralized data, in terms of privacy concerns and operational costs.”1\nDiscerning characteristics:",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "Principles",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Federated analytics</span>"
     ]
   },
   {
-    "objectID": "paradox.html",
-    "href": "paradox.html",
-    "title": "2  The Paradox of Open",
+    "objectID": "principles/federated-analytics.html#introduction",
+    "href": "principles/federated-analytics.html#introduction",
+    "title": "2  Federated analytics",
     "section": "",
-    "text": "2.1 The engines of data science and the paradox of open\nThe Computer History Museum recounts that the history of the Information Age is driven by three ‘engines’, namely the silicon engine, the storage engine and the internet as the networking engine. Each of these engines have been instrumental in the development in of data science as we know today. Without the silicon engine, we would not be able to train foundational large language models with over 1023 FLOPs.[^1] Without the storage engine and the internet, we would not be able to store and collect petabyte-sized datasets such as Common Crawl as input for these models.\nBesides the technological developments in and of themselves, the internet also gave birth to the open movement.[^2] Numerous organisations and initiatives have been launched with a belief in openness and free knowledge. Their proponents placed their bets on the combined power of networked information services and new governance models for the production and sharing of content and data. Members of this broad movement believed it possible to leverage this combination of power and opportunity to build a more democratic society, unleashing the power of the internet to create universal access to knowledge and culture. Such openness meant not only freedom, but also presented a path to justice and equality.\nHowever, the open revolution not happen. At least not on the scale that we and many other proponents of free culture expected. Although the copyright wars are almost over, conflicts about access to and control over informational resources have been superseded by conflicts about privacy, economic value extraction, the emergence of artificial intelligence, and the destabilising effects of dominant platforms on (democratic) societies. Instead of access to information, the control of personal data has emerged in the age of platforms as the critical contention.\nToday, open is both a challenge to and an enabler of concentrations of power. Over the last decade, we have witnessed a wholesale transformation of the networked information ecosystem. The web moved away from the ideals and the open design of the early internet and turned into an environment that is dominated by a small number of platforms.",
+    "text": "Apply some form of statistical disclore control (SDC) and/or privacy-enhancing technologies (PETS). Note we SDC can include differential privacy (DP), but we take a more generic approach that we want to protect the raw data as such, for example to provide guarantees to data holders with respect to commercial interest, trade secrets and the like. data privacy/security through PETs. Practically, all approaches to FA should have output control\ngovernance on the computation and not on data access as such",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Paradox of Open</span>"
+      "Principles",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Federated analytics</span>"
     ]
   },
   {
-    "objectID": "paradox.html#the-engines-of-data-science-and-the-paradox-of-open",
-    "href": "paradox.html#the-engines-of-data-science-and-the-paradox-of-open",
-    "title": "2  The Paradox of Open",
+    "objectID": "principles/federated-analytics.html#key-resources",
+    "href": "principles/federated-analytics.html#key-resources",
+    "title": "2  Federated analytics",
+    "section": "2.2 Key resources",
+    "text": "2.2 Key resources\nMonographs, very detailed:\n\nFederated Learning Systems (2021) by Rehman and Gaber2\nFederated Learning (2022) by Ludwig and Baracaldo3\n\nReview papers\n\nElkordy, A.R. et al. (2023)1\nWang, Z. et al. (2025 )4\n\nApplications in healthcare\n\nRieke, N. et al. (2020)5\nJoshi, M. et al. (2022)6, Fig 2 is nice diagram explaining horizontal, vertical partitioning and transfer learning\n\nHands-on - vantage6 workshop (link)\n\n\n\n\n1. Elkordy, A.R. et al. (2023). Federated Analytics: A Survey. SIP 12. 10.1561/116.00000063.\n\n\n2. Rehman, M.H.U., and Gaber, M.M. eds. (2021). Federated Learning Systems: Towards Next-Generation AI (Springer International Publishing) 10.1007/978-3-030-70604-3.\n\n\n3. Ludwig, H., and Baracaldo, N. eds. (2022). Federated Learning: A Comprehensive Overview of Methods and Applications (Springer International Publishing) 10.1007/978-3-030-96896-0.\n\n\n4. Wang, Z. et al. (2025). A Survey on Federated Analytics: Taxonomy, Enabling Techniques, Applications and Open Issues. IEEE Commun. Surv. Tutorials, 1–1. 10.1109/COMST.2025.3558755.\n\n\n5. Rieke, N. et al. (2020). The future of digital health with federated learning. npj Digit. Med. 3, 1–7. 10.1038/s41746-020-00323-1.\n\n\n6. Joshi, M. et al. (2022). Federated Learning for Healthcare Domain - Pipeline, Applications and Challenges. ACM Trans. Comput. Healthcare 3, 40:1–40:36. 10.1145/3533708.",
+    "crumbs": [
+      "Principles",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Federated analytics</span>"
+    ]
+  },
+  {
+    "objectID": "principles/mpc.html",
+    "href": "principles/mpc.html",
+    "title": "4  Secure multiparty computation",
+    "section": "",
+    "text": "There are different solutions to prevent the reconstruction of raw data. One solution is to make sure that no party other than the data owner is actually able to see the intermediate data. One branch of techniques that can be used for this is Secure Multiparty Computation (MPC). With MPC, computations are performed collaboratively by multiple parties. Data is encrypted in such a way that other parties cannot see the original values, but values of multiple parties can still be combined ( e.g. added or multiplied). A classic technique from the field of MPC is secret sharing. With this technique data is encrypted, after which pieces of the encryption are sent to the other parties. No single party will be able to reconstruct the original value. Only when a certain minimum of parties work together (n-1 in many cases) the original value can be retrieved.\nWhen combining multiple values using secret sharing, this will result in the parties owning new puzzle pieces that when put together will reveal the result of the computation.",
+    "crumbs": [
+      "Principles",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Secure multiparty computation</span>"
+    ]
+  },
+  {
+    "objectID": "applications/image-classification.html",
+    "href": "applications/image-classification.html",
+    "title": "5  Image classification",
+    "section": "",
+    "text": "Work and show-case Dekker et al.",
+    "crumbs": [
+      "Applications",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Image classification</span>"
+    ]
+  },
+  {
+    "objectID": "applications/text-classification.html",
+    "href": "applications/text-classification.html",
+    "title": "6  Text classiciation",
+    "section": "",
+    "text": "Work DHD AOIC\n\nF-NLP covers supervised learning with text\n\nclassification using text, often in combination with tabular data. NLP/Language models tools are used as pre-processing step for embedding\nnot in scope: training/tuning of LLMs (separate chapter?)\n\nPLUGIN-ML library",
+    "crumbs": [
+      "Applications",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Text classiciation</span>"
+    ]
+  },
+  {
+    "objectID": "applications/graph-based-analytics.html",
+    "href": "applications/graph-based-analytics.html",
+    "title": "7  Graph-based analytics",
+    "section": "",
+    "text": "7.1 Omics domain",
+    "crumbs": [
+      "Applications",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Graph-based analytics</span>"
+    ]
+  },
+  {
+    "objectID": "applications/graph-based-analytics.html#omics-domain",
+    "href": "applications/graph-based-analytics.html#omics-domain",
+    "title": "7  Graph-based analytics",
+    "section": "",
+    "text": "FAIR Data Cube\nHartwig",
+    "crumbs": [
+      "Applications",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Graph-based analytics</span>"
+    ]
+  },
+  {
+    "objectID": "applications/graph-based-analytics.html#business-analytics",
+    "href": "applications/graph-based-analytics.html#business-analytics",
+    "title": "7  Graph-based analytics",
+    "section": "7.2 Business analytics",
+    "text": "7.2 Business analytics\n\nKIK-V",
+    "crumbs": [
+      "Applications",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Graph-based analytics</span>"
+    ]
+  },
+  {
+    "objectID": "engineering/interoperability.html",
+    "href": "engineering/interoperability.html",
+    "title": "10  Semantic interoperability",
+    "section": "",
+    "text": "Work ‘ontologies of ontologies’",
+    "crumbs": [
+      "Engineering",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Semantic interoperability</span>"
+    ]
+  },
+  {
+    "objectID": "future/paradox.html",
+    "href": "future/paradox.html",
+    "title": "11  The paradox of open",
+    "section": "",
+    "text": "11.1 The engines of data science and the paradox of open\nThe Computer History Museum recounts that the history of the Information Age is driven by three ‘engines’, namely the silicon engine, the storage engine and the internet as the networking engine. Each of these engines have been instrumental in the development in of data science as we know today. Without the silicon engine, we would not be able to train foundational large language models with over 1023 FLOPs.[^1] Without the storage engine and the internet, we would not be able to store and collect petabyte-sized datasets such as Common Crawl as input for these models.\nBesides the technological developments in and of themselves, the internet also gave birth to the open movement.[^2] Numerous organisations and initiatives have been launched with a belief in openness and free knowledge. Their proponents placed their bets on the combined power of networked information services and new governance models for the production and sharing of content and data. Members of this broad movement believed it possible to leverage this combination of power and opportunity to build a more democratic society, unleashing the power of the internet to create universal access to knowledge and culture. Such openness meant not only freedom, but also presented a path to justice and equality.\nHowever, the open revolution not happen. At least not on the scale that we and many other proponents of free culture expected. Although the copyright wars are almost over, conflicts about access to and control over informational resources have been superseded by conflicts about privacy, economic value extraction, the emergence of artificial intelligence, and the destabilising effects of dominant platforms on (democratic) societies. Instead of access to information, the control of personal data has emerged in the age of platforms as the critical contention.\nToday, open is both a challenge to and an enabler of concentrations of power. Over the last decade, we have witnessed a wholesale transformation of the networked information ecosystem. The web moved away from the ideals and the open design of the early internet and turned into an environment that is dominated by a small number of platforms.",
+    "crumbs": [
+      "Future developments",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>The paradox of open</span>"
+    ]
+  },
+  {
+    "objectID": "future/paradox.html#the-engines-of-data-science-and-the-paradox-of-open",
+    "href": "future/paradox.html#the-engines-of-data-science-and-the-paradox-of-open",
+    "title": "11  The paradox of open",
     "section": "",
     "text": "We learned that open approaches flourish under two types of conditions:\n\n\n\n\nProjects where many people contribute to the creation of a common resource – this is the story of Wikipedia, OpenStreetMap, Blender.org, and the countless free software projects that provide much of the internet’s infrastructure.\nCircumstances where opening up is the result of external incentives or requirements, rather than voluntary actions – this is the story of publicly-funded knowledge production like Open Access academic publications, cultural heritage collections in the Public Domain, Open Educational Resources (OER), and Open Government data.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Paradox of Open</span>"
+      "Future developments",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>The paradox of open</span>"
     ]
   },
   {
-    "objectID": "paradox.html#from-closed-digtal-platforms-towards-open-federated-data-platforms",
-    "href": "paradox.html#from-closed-digtal-platforms-towards-open-federated-data-platforms",
-    "title": "2  The Paradox of Open",
-    "section": "2.2 From closed digtal platforms towards open, federated data platforms",
-    "text": "2.2 From closed digtal platforms towards open, federated data platforms\n1,2\n\n\n\nTable 2.1: Types of data sharing and in relation to new standards and technology enablers to create openness. Taken from de Reuver et al. (2022).\n\n\n\n\n\n\n\n\n\n\n\nType of data sharing\nTechnology enablers to create openness of health data platforms\n\n\n\n\n1\nData at the most granular subject level, which is persisted and used to provide a longitudinal record.\nDecentralized catalogs, semantic interoperability\n\n\n2\nAggregated data, for example statistics for policy evaluation and benchmarking\nFederated learning\n\n\n3\nData analytics modules, that provide access to work and access the data.\nFederated learning (FL)3 and privacy- enhancing technologies (PETs)4,5: new paradigms that address the problem of data governance and privacy by training algorithms collaboratively without exchanging the data itself. Models can be trained on combined datasets and made available as open source artifacts for decision support. Data analysts can use FL and PETs to work with the data in a collaborative, decentralized fashion.\n\n\n4\nTrained models that have been derived from the data and can be used stand-alone for decision support.\nONNX, HugginFace …",
+    "objectID": "future/paradox.html#from-closed-digtal-platforms-towards-open-federated-data-platforms",
+    "href": "future/paradox.html#from-closed-digtal-platforms-towards-open-federated-data-platforms",
+    "title": "11  The paradox of open",
+    "section": "11.2 From closed digtal platforms towards open, federated data platforms",
+    "text": "11.2 From closed digtal platforms towards open, federated data platforms\n1,2\n\n\n\nTable 11.1: Types of data sharing and in relation to new standards and technology enablers to create openness. Taken from de Reuver et al. (2022).\n\n\n\n\n\n\n\n\n\n\n\nType of data sharing\nTechnology enablers to create openness of health data platforms\n\n\n\n\n1\nData at the most granular subject level, which is persisted and used to provide a longitudinal record.\nDecentralized catalogs, semantic interoperability\n\n\n2\nAggregated data, for example statistics for policy evaluation and benchmarking\nFederated learning\n\n\n3\nData analytics modules, that provide access to work and access the data.\nFederated learning (FL)3 and privacy- enhancing technologies (PETs)4,5: new paradigms that address the problem of data governance and privacy by training algorithms collaboratively without exchanging the data itself. Models can be trained on combined datasets and made available as open source artifacts for decision support. Data analysts can use FL and PETs to work with the data in a collaborative, decentralized fashion.\n\n\n4\nTrained models that have been derived from the data and can be used stand-alone for decision support.\nONNX, HugginFace …",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Paradox of Open</span>"
+      "Future developments",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>The paradox of open</span>"
     ]
   },
   {
-    "objectID": "paradox.html#image-credit",
-    "href": "paradox.html#image-credit",
-    "title": "2  The Paradox of Open",
-    "section": "2.3 Image credit",
-    "text": "2.3 Image credit\nIn the spirit of the animal menagerie of O’Reilly books, I have chosen the Fortuna Fragilis as the preliminary cover. This species can be found on Terra Ultima by Raoul Deleo. I like to think that federated data science is fragile and fortuitous at the same time, and that it is worth kindling if we are to put data to use for the common good. \n\n\n\n\n1. de Reuver, M. et al. (2018). The Digital Platform: A Research Agenda. Journal of Information Technology 33, 124–135. 10.1057/s41265-016-0033-3.\n\n\n2. de Reuver, M. et al. (2022). The openness of data platforms: A research agenda. In Proceedings of the 1st International Workshop on Data Economy DE ’22. (Association for Computing Machinery), pp. 34–41. 10.1145/3565011.3569056.\n\n\n3. Rieke, N. et al. (2020). The future of digital health with federated learning. npj Digit. Med. 3, 1–7. 10.1038/s41746-020-00323-1.\n\n\n4. Scheibner, J. et al. (2021). Revolutionizing Medical Data Sharing Using Advanced Privacy-Enhancing Technologies: Technical, Legal, and Ethical Synthesis. Journal of Medical Internet Research 23, e25120. 10.2196/25120.\n\n\n5. Jordan, S. et al. (2022). Selecting Privacy-Enhancing Technologies for Managing Health Data Use. Front Public Health 10, 814163. 10.3389/fpubh.2022.814163.",
+    "objectID": "future/paradox.html#image-credit",
+    "href": "future/paradox.html#image-credit",
+    "title": "11  The paradox of open",
+    "section": "11.3 Image credit",
+    "text": "11.3 Image credit\nIn the spirit of the animal menagerie of O’Reilly books, I have chosen the Fortuna Fragilis as the preliminary cover. This species can be found on Terra Ultima by Raoul Deleo. I like to think that federated data science is fragile and fortuitous at the same time, and that it is worth kindling if we are to put data to use for the common good. \n\n\n\n\n1. de Reuver, M. et al. (2018). The Digital Platform: A Research Agenda. Journal of Information Technology 33, 124–135. 10.1057/s41265-016-0033-3.\n\n\n2. de Reuver, M. et al. (2022). The openness of data platforms: A research agenda. In Proceedings of the 1st International Workshop on Data Economy DE ’22. (Association for Computing Machinery), pp. 34–41. 10.1145/3565011.3569056.\n\n\n3. Rieke, N. et al. (2020). The future of digital health with federated learning. npj Digit. Med. 3, 1–7. 10.1038/s41746-020-00323-1.\n\n\n4. Scheibner, J. et al. (2021). Revolutionizing Medical Data Sharing Using Advanced Privacy-Enhancing Technologies: Technical, Legal, and Ethical Synthesis. Journal of Medical Internet Research 23, e25120. 10.2196/25120.\n\n\n5. Jordan, S. et al. (2022). Selecting Privacy-Enhancing Technologies for Managing Health Data Use. Front Public Health 10, 814163. 10.3389/fpubh.2022.814163.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Paradox of Open</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "3  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Summary</span>"
+      "Future developments",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>The paradox of open</span>"
     ]
   },
   {

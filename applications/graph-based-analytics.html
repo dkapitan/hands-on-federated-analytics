@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Daniel Kapitan">
+<meta name="author" content="Joep van Dun">
+<meta name="author" content="Linkisght/Zorginstituut?/Maarten den Braber">
 
-<title>1&nbsp; Introduction – Hands-On Federated Analytics</title>
+<title>7&nbsp; Graph-based analytics – Hands-On Federated Analytics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,47 +23,28 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./paradox.html" rel="next">
-<link href="./index.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fd014ada8877419199ac73958e9333e8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../applications/private-set-intersection.html" rel="next">
+<link href="../applications/text-classification.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5279a5d9c0796258f9a6caf185370e8a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -101,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../applications/index.html">Applications</a></li><li class="breadcrumb-item"><a href="../applications/graph-based-analytics.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Graph-based analytics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -116,7 +100,7 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Hands-On Federated Analytics</a> 
+      <a href="../">Hands-On Federated Analytics</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -128,31 +112,129 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../principles/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  <a href="../principles/why.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Why federated analytics?</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paradox.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Paradox of Open</span></span></a>
+  <a href="../principles/federated-analytics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Federated analytics</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  <a href="../principles/federated-learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Federated learning</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../principles/mpc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Secure multiparty computation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../applications/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Applications</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../applications/image-classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Image classification</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../applications/text-classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Text classiciation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../applications/graph-based-analytics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Graph-based analytics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../applications/private-set-intersection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Private set intersection</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../engineering/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Engineering</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../engineering/composable-data-stack.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Composable data stack</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../engineering/interoperability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Semantic interoperability</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../future/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Future developments</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../future/paradox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">The paradox of open</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../future/data-spaces.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Data spaces and data solidarity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -166,22 +248,32 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#key-resources" id="toc-key-resources" class="nav-link active" data-scroll-target="#key-resources"><span class="header-section-number">1.1</span> Key resources</a></li>
+  <li><a href="#omics-domain" id="toc-omics-domain" class="nav-link active" data-scroll-target="#omics-domain"><span class="header-section-number">7.1</span> Omics domain</a></li>
+  <li><a href="#business-analytics" id="toc-business-analytics" class="nav-link" data-scroll-target="#business-analytics"><span class="header-section-number">7.2</span> Business analytics</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../applications/index.html">Applications</a></li><li class="breadcrumb-item"><a href="../applications/graph-based-analytics.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Graph-based analytics</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Graph-based analytics</span></h1>
+<p class="subtitle lead">Federated graph-queries</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Daniel Kapitan </p>
+             <p>Joep van Dun </p>
+             <p>Linkisght/Zorginstituut?/Maarten den Braber </p>
+          </div>
+  </div>
     
   
     
@@ -192,52 +284,20 @@ div.csl-indent {
 </header>
 
 
-<p>A survey on federated analytics (FA) defines it as “a paradigm for collaboratively extracting insights from distributed data that is owned by multiple parties (e.g., individual mobile devices or institutional organizations) under the coordination of a central entity (e.g., a service provider) without any of the raw data leaving their local parties or revealing information beyond the targeted insights. The core principles of this paradigm allow breaking the limitations for deriving analytics from limited centralized data, in terms of privacy concerns and operational costs.”<span class="citation" data-cites="elkordy2023federated"><sup><a href="references.html#ref-elkordy2023federated" role="doc-biblioref">1</a></sup></span></p>
-<p>Discerning characteristics:</p>
+<section id="omics-domain" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="omics-domain"><span class="header-section-number">7.1</span> Omics domain</h2>
 <ul>
-<li>Apply some form of statistical disclore control (SDC) and/or privacy-enhancing technologies (PETS). Note we SDC can include differential privacy (DP), but we take a more generic approach that we want to protect the raw data as such, for example to provide guarantees to data holders with respect to commercial interest, trade secrets and the like. data privacy/security through PETs. Practically, all approaches to FA should have output control</li>
-<li>governance on the computation and not on data access as such</li>
+<li>FAIR Data Cube</li>
+<li>Hartwig</li>
 </ul>
-<p><img src="./images/federated-analytics-overview.png" class="img-fluid"></p>
-<section id="key-resources" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="key-resources"><span class="header-section-number">1.1</span> Key resources</h2>
-<p>Monographs, very detailed:</p>
+</section>
+<section id="business-analytics" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="business-analytics"><span class="header-section-number">7.2</span> Business analytics</h2>
 <ul>
-<li>Federated Learning Systems (2021) by Rehman and Gaber<span class="citation" data-cites="rehman2021federated"><sup><a href="references.html#ref-rehman2021federated" role="doc-biblioref">2</a></sup></span></li>
-<li>Federated Learning (2022) by Ludwig and Baracaldo<span class="citation" data-cites="ludwig2022federated"><sup><a href="references.html#ref-ludwig2022federated" role="doc-biblioref">3</a></sup></span></li>
-</ul>
-<p>Review papers</p>
-<ul>
-<li>Elkordy, A.R. et al.&nbsp;(2023)<span class="citation" data-cites="elkordy2023federated"><sup><a href="references.html#ref-elkordy2023federated" role="doc-biblioref">1</a></sup></span></li>
-<li>Wang, Z. et al.&nbsp;(2025 )<span class="citation" data-cites="wang2025survey"><sup><a href="references.html#ref-wang2025survey" role="doc-biblioref">4</a></sup></span></li>
-</ul>
-<p>Applications in healthcare</p>
-<ul>
-<li>Rieke, N. et al.&nbsp;(2020)<span class="citation" data-cites="rieke2020future"><sup><a href="references.html#ref-rieke2020future" role="doc-biblioref">5</a></sup></span></li>
-<li>Joshi, M. et al.&nbsp;(2022)<span class="citation" data-cites="joshi2022federated"><sup><a href="references.html#ref-joshi2022federated" role="doc-biblioref">6</a></sup></span>, Fig 2 is nice diagram explaining horizontal, vertical partitioning and transfer learning</li>
+<li>KIK-V</li>
 </ul>
 
 
-<div id="refs" class="references csl-bib-body" role="list" style="display: none">
-<div id="ref-elkordy2023federated" class="csl-entry" role="listitem">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">Elkordy, A.R. et al. (2023). Federated <span>Analytics</span>: <span>A Survey</span>. SIP <em>12</em>. <a href="https://doi.org/10.1561/116.00000063">10.1561/116.00000063</a>.</div>
-</div>
-<div id="ref-rehman2021federated" class="csl-entry" role="listitem">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline">Rehman, M.H.U., and Gaber, M.M. eds. (2021). Federated <span>Learning Systems</span>: <span>Towards Next-Generation AI</span> (Springer International Publishing) <a href="https://doi.org/10.1007/978-3-030-70604-3">10.1007/978-3-030-70604-3</a>.</div>
-</div>
-<div id="ref-ludwig2022federated" class="csl-entry" role="listitem">
-<div class="csl-left-margin">3. </div><div class="csl-right-inline">Ludwig, H., and Baracaldo, N. eds. (2022). Federated <span>Learning</span>: <span>A Comprehensive Overview</span> of <span>Methods</span> and <span>Applications</span> (Springer International Publishing) <a href="https://doi.org/10.1007/978-3-030-96896-0">10.1007/978-3-030-96896-0</a>.</div>
-</div>
-<div id="ref-wang2025survey" class="csl-entry" role="listitem">
-<div class="csl-left-margin">4. </div><div class="csl-right-inline">Wang, Z. et al. (2025). A <span>Survey</span> on <span>Federated Analytics</span>: <span>Taxonomy</span>, <span>Enabling Techniques</span>, <span>Applications</span> and <span>Open Issues</span>. IEEE Commun. Surv. Tutorials, 1–1. <a href="https://doi.org/10.1109/COMST.2025.3558755">10.1109/COMST.2025.3558755</a>.</div>
-</div>
-<div id="ref-rieke2020future" class="csl-entry" role="listitem">
-<div class="csl-left-margin">5. </div><div class="csl-right-inline">Rieke, N. et al. (2020). The future of digital health with federated learning. npj Digit. Med. <em>3</em>, 1–7. <a href="https://doi.org/10.1038/s41746-020-00323-1">10.1038/s41746-020-00323-1</a>.</div>
-</div>
-<div id="ref-joshi2022federated" class="csl-entry" role="listitem">
-<div class="csl-left-margin">6. </div><div class="csl-right-inline">Joshi, M. et al. (2022). Federated <span>Learning</span> for <span>Healthcare Domain</span> - <span>Pipeline</span>, <span>Applications</span> and <span>Challenges</span>. ACM Trans. Comput. Healthcare <em>3</em>, 40:1–40:36. <a href="https://doi.org/10.1145/3533708">10.1145/3533708</a>.</div>
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -642,13 +702,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Welcome">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
+      <a href="../applications/text-classification.html" class="pagination-link" aria-label="Text classiciation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Text classiciation</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./paradox.html" class="pagination-link" aria-label="The Paradox of Open">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Paradox of Open</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../applications/private-set-intersection.html" class="pagination-link" aria-label="Private set intersection">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Private set intersection</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
