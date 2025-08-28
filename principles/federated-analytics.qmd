@@ -12,7 +12,7 @@ Discerning characteristics:
 - Apply some form of statistical disclore control (SDC) and/or privacy-enhancing technologies (PETS). Note we SDC can include differential privacy (DP), but we take a more generic approach that we want to protect the raw data as such, for example to provide guarantees to data holders with respect to commercial interest, trade secrets and the like. data privacy/security through PETs. Practically, all approaches to FA should have output control 
 - governance on the computation and not on data access as such
 
-![](./images/federated-analytics-overview.png)
+![](/images/federated-analytics-overview.png)
 
 
 ## Key resources
