@@ -1,8 +1,24 @@
+color:
+  palette:
+    light-grey: "#e7e5e2"
+    light-green: "#53E17C"
+    light-blue: "#50C9F0"
+    orange: "#F88539"
+  primary: black
+  secondary: light-grey
+  tertiary: light-green
+  info: light-blue
+  warning: orange
 typography:
   fonts:
     - family: Inter
       source: google
-    - family: Zilla Slab
+    - family: Mozilla Headline
+      source: google
+    - family: Fira Code
       source: google
   base: Inter
-  headings: Zilla Slab
+  headings: Mozilla Headline
+  link:
+    color: black
+  monospace: Fira Code
