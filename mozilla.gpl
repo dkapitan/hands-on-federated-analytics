@@ -1,15 +1,26 @@
 GIMP Palette
-Name: mozilla.gpl
+Name: Mozilla
 #
-  0   0   0 #000000
-  0   0   0 BLACK
-  0  69 139 #00458B
-  0  94  94 #005E5E
-  0 255 255 #00FFFF
- 84 255 189 #54FFBD
-110   0 139 #6E008B
-149 149 149 #959595
-231 229 226 #E7E5E2
-255  79  94 #FF4F5E
-255 244  79 #FFF44F
-255 255 255 #FFFFFF
+  0   0   0 Black
+  0  69 139 Dark Blue
+  0  94  94 Dark Green
+  0 255 255 Neon Blue
+ 84 255 189 Neon Green
+110   0 139 Dark Purple
+149 149 149 Dark Grey
+231 229 226 Light Grey
+255  79  94 Warm Red
+255 244  79 Lemon Yellow
+255 255 255 White
+  0  87 212 Hard Blue
+ 32 195 118 Mountain Meadow
+ 35 165 233 Light Blue
+ 80 201 240 Picton Blue
+ 83 225 124 Light Green
+209  49   9 Red
+237  85  10 Dark Orange
+238 216   0 Warm Yellow
+238 157   0 Orange
+240 108  19 Dark Orange
+255 158  95 Salmon
+255 255 108 Light Yellow
