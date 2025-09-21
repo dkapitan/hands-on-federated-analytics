@@ -11,13 +11,13 @@ color:
   warning: orange
 typography:
   fonts:
-    - family: Inter
+    - family: Mozilla Text # Inter
       source: google
     - family: Mozilla Headline
       source: google
     - family: Fira Code
       source: google
-  base: Inter
+  base: Mozilla Text
   headings: Mozilla Headline
   link:
     color: black
