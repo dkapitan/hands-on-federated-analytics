@@ -28,6 +28,6 @@ Structure:
 
 
 
-## Image credit
+## Cover image credit
 
 In the spirit of the [animal menagerie](https://www.oreilly.com/animals.csp) of O'Reilly books, I have chosen the _Fortuna Fragilis_ as the preliminary cover. This species can be found on [Terra Ultima](https://terra-ultima.tumblr.com/) by [Raoul Deleo](https://raouldeleo.com/). I like to think that collaborative data science is fragile and fortuitous at the same time, and that it is worth kindling if we are to put data to use for the common good.
