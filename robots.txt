@@ -1,0 +1,1 @@
+Sitemap: https://kapitan.net/hands-on-federated-analytics/sitemap.xml
