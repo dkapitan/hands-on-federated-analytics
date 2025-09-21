@@ -4,8 +4,19 @@ project:
 book:
   title: "Hands-On Federated Analytics"
   subtitle: "A practical guide to secure collaborative data science"
+  site-url: https://kapitan.net/hands-on-federated-analytics
+  repo-url: https://github.com/dkapitan/hands-on-federated-analytics
   author: "Daniel Kapitan"
   date: "7/6/2025"
+  search:
+    location: sidebar
+    type: textbox
+  open-graph: true
+  reader-mode: true
+  repo-actions: [issue]
+  sidebar:
+    title: false
+    style: floating
   chapters:
     - index.qmd
     - part: principles/index.qmd
