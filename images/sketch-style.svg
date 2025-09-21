@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   sodipodi:docname="sketch-style.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.5863464"
+     inkscape:cx="461.43768"
+     inkscape:cy="869.29311"
+     inkscape:current-layer="layer1"
+     showgrid="true">
+    <inkscape:grid
+       id="grid4"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="2.0000001"
+       spacingy="1.9999996"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true"
+       snapvisiblegridlinesonly="true"
+       dotted="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="rough_hatches"
+       id="path-effect3"
+       is_visible="true"
+       lpeversion="1.2"
+       direction="91.625606,80.994985 , 23.096252,0"
+       dist_rdm="75;1"
+       growth="0"
+       do_bend="true"
+       bender="91.625606,85.994985 , 5,0"
+       bottom_edge_variation="6.5024255;1"
+       top_edge_variation="6.5024255;1"
+       bottom_tgt_variation="0;1"
+       top_tgt_variation="0;1"
+       scale_bf="1"
+       scale_bb="1"
+       scale_tf="1"
+       scale_tb="1"
+       top_smth_variation="0;1"
+       bottom_smth_variation="0;1"
+       fat_output="true"
+       stroke_width_top="1"
+       stroke_width_bottom="1"
+       front_thickness="1"
+       back_thickness="0.25" />
+    <inkscape:path-effect
+       effect="roughen"
+       id="path-effect2"
+       is_visible="true"
+       lpeversion="1.2"
+       global_randomize="1.7;1"
+       displace_x="0;1"
+       displace_y="0;1"
+       method="size"
+       max_segment_size="1.1"
+       segments="2"
+       handles="along"
+       shift_nodes="true"
+       fixed_displacement="false"
+       spray_tool_friendly="false" />
+    <inkscape:path-effect
+       effect="sketch"
+       id="path-effect1"
+       is_visible="true"
+       lpeversion="1"
+       nbiter_approxstrokes="3"
+       parallel_offset="1.7;1"
+       strokelength="103.20298"
+       strokelength_rdm="0.3;1"
+       strokeoverlap="0.081936685"
+       strokeoverlap_rdm="0.3;1"
+       ends_tolerance="0.1;1"
+       tremble_size="0;1"
+       tremble_frequency="0.01"
+       nbtangents="5"
+       tgt_places_rdmness="0;1"
+       tgtlength="7.8212291"
+       tgtlength_rdm="0.3;1"
+       tgtscale="10" />
+  </defs>
+  <rect
+     style="fill:#20c376;stroke-width:0.2;stroke-miterlimit:5.3;paint-order:stroke fill markers"
+     id="rect2"
+     width="74"
+     height="19.999992"
+     x="40"
+     y="221.99995"
+     rx="0"
+     ry="0" />
+  <rect
+     style="fill:#20c376;stroke-width:0.2;stroke-miterlimit:5.3;paint-order:stroke fill markers"
+     id="rect2-4"
+     width="36.000004"
+     height="20.197035"
+     x="40"
+     y="199.99995"
+     rx="0"
+     ry="0" />
+  <rect
+     style="fill:#20c376;stroke-width:0.2;stroke-miterlimit:5.3;paint-order:stroke fill markers"
+     id="rect2-4-5"
+     width="36.000004"
+     height="20.197035"
+     x="78"
+     y="199.90144"
+     rx="0"
+     ry="0" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.9389px;font-family:'Mozilla Text';-inkscape-font-specification:'Mozilla Text, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#53e17c;stroke:none;stroke-width:0.2;stroke-miterlimit:5.3;stroke-dasharray:none;paint-order:stroke fill markers"
+       x="59.777752"
+       y="233.56584"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.9389px;font-family:'Mozilla Text';-inkscape-font-specification:'Mozilla Text, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#e7e5e2;stroke:none;stroke-width:0.2"
+         x="59.777752"
+         y="233.56584">Infrastructure</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:4.93889982px;font-family:'Mozilla Text';-inkscape-font-specification:'Mozilla Text, Semi-Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#53e17c;stroke:none;stroke-width:0.2;stroke-miterlimit:5.3;stroke-dasharray:none;paint-order:stroke fill markers;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       x="47.078819"
+       y="211.45718"
+       id="text4-3"><tspan
+         sodipodi:role="line"
+         id="tspan4-0"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.93889982px;font-family:'Mozilla Text';-inkscape-font-specification:'Mozilla Text, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#e7e5e2;stroke:none;stroke-width:0.2"
+         x="47.078819"
+         y="211.45718">Compute</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:4.93889982px;font-family:'Mozilla Text';-inkscape-font-specification:'Mozilla Text, Semi-Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#53e17c;stroke:none;stroke-width:0.2;stroke-miterlimit:5.3;stroke-dasharray:none;paint-order:stroke fill markers;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       x="87.802444"
+       y="211.45718"
+       id="text4-3-8"><tspan
+         sodipodi:role="line"
+         id="tspan4-0-5"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.93889982px;font-family:'Mozilla Text';-inkscape-font-specification:'Mozilla Text, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#e7e5e2;stroke:none;stroke-width:0.2"
+         x="87.802444"
+         y="211.45718">Storage</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.9389px;font-family:'Mozilla Headline';-inkscape-font-specification:'Mozilla Headline, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#e7e5e2;stroke-width:0.2;stroke-miterlimit:5.3;paint-order:stroke fill markers"
+       x="130"
+       y="211.99995"
+       id="text8"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         style="fill:#000000;stroke-width:0.2"
+         x="130"
+         y="211.99995">INFRASTRUCTURE LAYER</tspan></text>
+  </g>
+</svg>
