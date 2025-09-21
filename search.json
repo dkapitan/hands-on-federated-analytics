@@ -10,11 +10,11 @@
     ]
   },
   {
-    "objectID": "index.html#image-credit",
-    "href": "index.html#image-credit",
+    "objectID": "index.html#cover-image-credit",
+    "href": "index.html#cover-image-credit",
     "title": "Hands-On Federated Analytics",
-    "section": "Image credit",
-    "text": "Image credit\nIn the spirit of the animal menagerie of O’Reilly books, I have chosen the Fortuna Fragilis as the preliminary cover. This species can be found on Terra Ultima by Raoul Deleo. I like to think that collaborative data science is fragile and fortuitous at the same time, and that it is worth kindling if we are to put data to use for the common good.",
+    "section": "Cover image credit",
+    "text": "Cover image credit\nIn the spirit of the animal menagerie of O’Reilly books, I have chosen the Fortuna Fragilis as the preliminary cover. This species can be found on Terra Ultima by Raoul Deleo. I like to think that collaborative data science is fragile and fortuitous at the same time, and that it is worth kindling if we are to put data to use for the common good.",
     "crumbs": [
       "Welcome"
     ]
